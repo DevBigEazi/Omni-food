@@ -1,0 +1,288 @@
+/**********************************
+for smaller laptop max-width:1355px
+***********************************/
+@media (max-width: 84em) {
+  .hero {
+    max-width: 120rem;
+  }
+
+  .headingPrimary {
+    font-size: 5.2rem;
+    line-height: 1.05;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/**********************************
+for landscape tablet max-width:1200px
+***********************************/
+
+@media (max-width: 76em) {
+  html {
+    font-size: 55.2%;
+  }
+
+  .grid {
+    column-gap: 4.8rem;
+    row-gap: 6.4rem;
+  }
+
+  .mainNavList {
+    gap: 2.8rem;
+  }
+
+  .hero {
+    gap: 9.6rem;
+  }
+
+  .headingSencondary {
+    font-size: 3.6rem;
+  }
+
+  .headingTertiary {
+    font-size: 2.4rem;
+  }
+
+  .header {
+    padding: 0 4.8rem;
+  }
+
+  .testimonialContainer {
+    padding: 9.6rem 3.2rem;
+  }
+}
+
+/**********************************
+for portrait tablet max-width:940px
+***********************************/
+
+@media (max-width: 59em) {
+  html {
+    font-size: 50%;
+  }
+
+  .logo {
+    height: 2.4rem;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 0 8rem;
+  }
+
+  .header {
+    position: relative;
+  }
+
+  .mainNav {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*stepforhiddenanelement*//*1.opacity*/opacity: 0;
+    /*2pointer-event*/pointer-events: none;
+    /*3.visibilty*/visibility: hidden; 
+    transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+    transition: all 1s ease-in;
+    -webkit-transition: all 1s ease-in;
+    -moz-transition: all 1s ease-in;
+    -ms-transition: all 1s ease-in;
+    -o-transition: all 1s ease-in;
+}
+
+  .navOpen .mainNav {
+	opacity: 1;
+	pointer-events: auto;
+	visibility: visible;
+	transform: translateX(0);
+	-webkit-transform: translateX(0);
+	-ms-transform: translateX(0);
+	-o-transform: translateX(0);
+	-moz-transform: translateX(0);
+}
+
+  .mainNavLink:link,
+  .mainNavLink:visited {
+    font-size: 2.4rem;
+  }
+
+  .navOpen .iconMobileNav[name="menu"] {
+    display: none;
+  }
+  .navOpen .iconMobileNav[name="close"] {
+    display: block;
+  }
+
+  .mainNavList {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  .btnMobileNav {
+    display: block;
+  }
+
+  .heroTextBox,
+  .heroImgCon {
+    text-align: center;
+  }
+
+  .deliveredMeals {
+    justify-content: center;
+    margin-top: 3.2rem;
+  }
+  .stepNumber {
+    font-size: 7.4rem;
+  }
+
+  .mealContents {
+    padding: 2.4rem 3.2rem 3.2rem;
+  }
+
+  .sectionTestimonials {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .pricingPlanStarter {
+    padding: 3.1rem;
+  }
+
+  .pricingPlanComplete {
+    padding: 3.3rem;
+  }
+
+  .CTA {
+    grid-template-columns: 3fr 2fr;
+  }
+
+  .CTAForm {
+    grid-template-columns: 1fr;
+  }
+
+  .btnForm {
+    width: 100%;
+    margin-top: 1.2rem;
+  }
+}
+
+/**********************************
+for small tablet max-width: 704px
+***********************************/
+
+@media (max-width: 44em) {
+  .grid--3-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid--4-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .headingSencondary {
+    margin-bottom: 4.8rem;
+  }
+
+  .diet {
+    grid-column: 1 / -1;
+    justify-self: center;
+  }
+
+  .grid--footer {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .navCol {
+    grid-column: span 2;
+    margin-top: 3.2rem;
+  }
+
+  .logoCol,
+  .addressCol {
+    grid-column: span 3;
+  }
+}
+
+/**********************************
+for small phone max-width: 550px
+***********************************/
+
+@media (max-width: 35em) {
+  .grid--2-cols,
+  .grid--3-cols,
+  .grid--4-cols {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .sectHero {
+    padding: 2.4rem 0 6.4rem 0;
+  }
+
+  .hero {
+    padding: 0 3.2rem;
+  }
+
+  .btn,
+  .btn:link,
+  .btn:visited {
+    padding: 2.4rem 1.6rem;
+  }
+
+  .heroImg {
+    width: 80%;
+  }
+
+  .logos img {
+    height: 1.2rem;
+  }
+
+  .stebTextBox {
+    transform: translateY(-2.4rem);
+  }
+
+  .rowOne {
+    grid-row: 1;
+  }
+
+  .rowFive {
+    grid-row: 5;
+  }
+
+  .testimonials {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .CTA {
+    grid-template-columns: 1fr;
+  }
+
+  .CTATextBox {
+    padding: 3.2rem;
+  }
+
+  .CTAImgBox {
+    height: 32rem;
+    grid-row: 1;
+  }
+}

@@ -1,0 +1,205 @@
+/********
+colors;
+primary:#e67e22
+tint: fdf2e9
+********/
+
+/*********************/
+
+/************
+BASIC CONFIG
+************/
+
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  /* scroll-behavior: smooth; */
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  line-height: 1;
+  color: #27231e;
+  overflow-x: hidden;
+}
+
+
+
+/************
+RE-USABLE ELEMENT
+************/
+
+.btn,
+.btn:link,
+.btn:visited {
+  padding: 1.6rem 3.2rem;
+  text-decoration: none;
+  border-radius: 0.7rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  transition: all 0.5s;
+  cursor: pointer;
+  border: none;
+}
+
+.btnFull:link,
+.btnFull:visited {
+  background-color: #e67e22;
+  color: #ffff;
+}
+
+.btnFull:hover,
+.btnFull:active {
+  background-color: #bb5d0a;
+}
+
+.btnOutline:link,
+.btnOutline:visited {
+  background-color: #ffff;
+  color: #333;
+}
+
+.btnOutline:hover,
+.btnOutline:active {
+  background-color: #fdf2e9;
+  box-shadow: inset 0 0 0 3px #ffff;
+}
+
+.btnForm {
+  background-color: #45260a;
+  color: #fdf2e9;
+  padding: 1.2rem;
+  align-self: end;
+}
+
+.btnForm:hover {
+  background-color: #efefef;
+  color: #45260a;
+}
+
+.flexEnd {
+  display: flex;
+  align-items: end;
+}
+
+/***********
+HEADINGS ELEMENT
+************/
+
+.headingPrimary,
+.headingSencondary {
+  color: #333;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.headingPrimary {
+  font-size: 5.2rem;
+  line-height: 1.05;
+}
+
+.headingSencondary {
+  font-size: 4.5rem;
+  line-height: 1.2;
+  margin-bottom: 9.5rem;
+}
+
+.headingTertiary {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 9.5rem;
+}
+
+.subHeading {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #e67e22;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.75px;
+}
+
+.marginBottomSm {
+  margin-bottom: 4rem !important;
+}
+
+.marginBottomMd {
+  margin-bottom: 6.4rem !important;
+}
+
+.marginRightsm {
+  margin-right: 2rem !important;
+}
+
+/**********
+GRID ELEMENTS
+***********/
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+.grid {
+  display: grid;
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
+  margin-bottom: 9.6rem;
+}
+
+.grid:not(last-child) {
+  margin-bottom: 9.6rem;
+}
+
+.grid--center-v {
+  align-items: center;
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr) /*1fr 1fr*/;
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--5-cols {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.strong {
+  font-weight: 600;
+}
+
+.link:link,
+link:visited {
+  display: inline-block;
+  text-decoration: none;
+  padding-bottom: 2px;
+  transition: all 0.3s;
+  color: #e67e22;
+  border-bottom: 1px solid currentColor;
+}
+
+.link:hover,
+link:active {
+  color: #7e3f09;
+  text-decoration: none;
+}
